@@ -5,13 +5,13 @@ Fully Customized pin code(OTP) verification view without storyboard.
 
 ## Getting Started
 
-### Features :
+### Features
 
 - Flawless focus change to the consecutive OTP box when the text is entered/deleted.
 - When the user taps on the Pinview, the first empty box available is focused automatically (when the cursor is hidden).
 - Customisations are available for pin box sizes, font color, border color, inputType etc.
 
-### Installation
+### Installation 
 
 download project for quick demo.
 
@@ -35,7 +35,7 @@ var config : PinConfig = PinConfig()
 ```
 
 responsible for all kind of customization
-#### Example
+#### Example:
 
 ```sh
 config.otpFieldDisplayType = .square
@@ -63,7 +63,13 @@ config.otpFieldErrorBorderColor = UIColor.red
 self.view.addSubview(otpView)
  ```
  
-# Prerequisites
+ ##### NOTE: Do not forget to initialize UI by calling below method.
+ 
+ ```sh
+ otpView.initializeUI()
+ ```
+ 
+# Prerequisites:
 - xcode 9
 - swift 5
 
